@@ -16,6 +16,7 @@
   <servlet>
   <servlet-name>One</servlet-name>
   <jsp-file>/one.jsp</jsp-file>
+  
   <init-param>
   <param-name>username</param-name>
   <param-value>Payal</param-value>
@@ -25,4 +26,10 @@
   <servlet-name>One</servlet-name>
   <url-pattern>/One</url-pattern>
   </servlet-mapping>
+  <jsp-config>
+  <jsp-property-group>
+  <url-pattern>/*</url-pattern>
+  <el-ignored> false</el-ignored>
+  </jsp-property-group>
+  </jsp-config>
 </web-app>

@@ -8,10 +8,12 @@
 <title>Implicit object</title>
 </head>
 <body>
+<%= LocalDate.now() %>
 <%! int count=0; %>
 <% count++; %>
 <%-- <%= 5/0 %> --%>
 <%= config.getInitParameter("username") %>
+<%= request.getParameter("username") %>
 <%= request.getRequestURI() %>
 <% out.println("Done"); %>
 <%= session.getId() %> <!-- 1 user: cart -->
